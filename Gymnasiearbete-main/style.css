@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f2f1e
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+#content > h2 {
+    position: relative;
+    color: white;
+    font-size: 3em;
+}
+
+#content > p {
+    position: relative;
+    color: white;
+    font-size: 1.2em;
+}
+
+#projekt {
+    max-width: 800px;
+    margin: 0 auto 100px auto;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+#projekt > h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#projekt > p {
+    font-size: 1.2em;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    padding: 18px 0;
+}
+
+#inre-nav {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    padding-left: 150px;
+}
+
+#logo > a > img  {
+    height: 40px;
+    border-radius: 6px;
+}
+
+#länkar {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+#länkar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#länkar a:hover {
+    opacity: 0.7;
+    text-shadow: 2px 2px 5px black;
+}
+
+#sökbar input {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+header{
+    text-align: center;
+    color: white;
+    padding: 100px 20px 10px;
+}
+
+#växtlexihela {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: auto ;
+}
+
+#växtlex {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#växt {
+    background-color: rgba(0, 0, 0, 0.525);
+    border: 1px solid rgb(61, 47, 47);
+    border-radius: 10px;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+#växt > h3 > p {
+    text-align: end;
+}
+
+#växt > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+#hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    }
+
+#hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+
+
+
+@media (max-width: 1100px) {
+
+    #inre-nav {
+        width: 95%;
+    }
+
+    #logo {
+        padding-left: 0;
+    }
+
+    #länkar {
+        gap: 20px;
+    }
+
+    #content > h2 {
+        font-size: 2.5em;
+    }
+
+    #content > p {
+        font-size: 1.1em;
+    }
+
+    #projekt > h2 {
+        font-size: 2em;
+    }
+
+    #växtlex {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+
+
+@media (max-width: 750px) {
+
+    nav {
+        padding: 10px 0;
+    }
+
+    #inre-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #logo {
+        padding-left: 0;
+    }
+
+    #hamburger {
+        display: flex;
+    }
+
+    #länkar {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #länkar a {
+        font-size: 1.1rem;
+    }
+
+    #länkar.active {
+        display: flex;
+    }
+
+    #sökbar {
+        display: none;
+    }
+
+    #sökbar input {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    section {
+        min-height: 80vh;
+    }
+
+    #content {
+        padding: 20px 15px;
+    }
+
+    #content > h2 {
+        font-size: 2em;
+    }
+
+    #content > p {
+        font-size: 1em;
+    }
+
+    header {
+        padding-top: 120px;
+    }
+
+    #projekt {
+        padding: 20px 15px;
+    }
+
+    #projekt > h2 {
+        font-size: 1.8em;
+    }
+
+    #projekt > p {
+        font-size: 1em;
+    }
+
+    #växtlexihela {
+        padding: 2rem 1rem;
+    }
+
+    #växtlex { 
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
