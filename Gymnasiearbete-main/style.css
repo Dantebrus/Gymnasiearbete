@@ -303,3 +303,37 @@ header{
 
 
 
+
+
+#vaxter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 48px 32px;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+}
+
+.vaxt-kort {
+  background-color: rgb(48, 48, 48);
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 24px;
+  color: white;
+  text-align: center;
+  width: 250px;
+}
+
+.vaxt-status {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.tid {
+  font-size: 13px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
