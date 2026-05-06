@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #0f2f1e
+    background-color: #2a452a
 }
 
 section {
@@ -303,8 +303,6 @@ header{
 
 
 
-
-
 #vaxter-container {
   display: flex;
   flex-wrap: wrap;
@@ -336,4 +334,42 @@ header{
   font-size: 13px;
   opacity: 0.7;
   margin-top: 8px;
+}
+
+#knappar{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 12px;
+    max-width: 1200px;
+    margin: auto;
+    padding-left: 650px;
+}
+
+#lägg-till-knapp{
+    background-color: rgb(255, 229, 217);
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 15px;    
+}
+
+#lägg-till-knapp:hover{
+    box-shadow: 0 0 10px black;
+    
+}
+
+#ta-bort-knapp{
+    background-color: rgb(255, 229, 217);
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px 10px;
+    font-size: 15px;    
+}
+
+#ta-bort-knapp:hover{
+    box-shadow: 0 0 10px black;
+    
 }
